@@ -19,8 +19,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Impact', 'Arial Black', 'sans-serif'],
-        body: ['Arial', 'Helvetica', 'sans-serif'],
+        display: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+        body: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
       },
     },
   },

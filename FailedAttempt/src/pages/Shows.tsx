@@ -13,16 +13,16 @@ const Shows = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="font-display text-5xl md:text-7xl mb-8 text-center border-b-4 border-accent pb-4">
-        SHOWS
+      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold">
+        Shows
       </h1>
 
       {shows.length === 0 ? (
         // Empty State
         <div className="text-center py-20">
-          <div className="bg-surface border-4 border-accent p-12 md:p-16 max-w-3xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl mb-6 text-accent">
-              NO SHOWS SCHEDULED
+          <div className="bg-surface rounded-3xl shadow-lg p-12 md:p-16 max-w-3xl mx-auto border border-gray-200">
+            <h2 className="font-display text-3xl md:text-4xl mb-6 text-accent font-semibold">
+              No Shows Scheduled
             </h2>
             <p className="text-text-primary text-lg md:text-xl mb-6 mx-auto">
               Check back soon for upcoming tour dates.
@@ -74,16 +74,16 @@ const Shows = () => {
       )}
 
       {/* Info Section */}
-      <div className="mt-16 bg-surface border-4 border-accent p-10 md:p-12">
-        <h2 className="font-display text-3xl md:text-4xl mb-6">BOOKING</h2>
+      <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-md p-10 md:p-12 border border-blue-200">
+        <h2 className="font-display text-3xl md:text-4xl mb-6 font-semibold">Booking</h2>
         <p className="text-text-primary text-lg md:text-xl mb-6 max-w-3xl">
           Interested in booking Failed Attempt for your venue or festival?
         </p>
         <a
           href="/contact"
-          className="inline-block bg-accent text-primary px-8 py-4 font-display text-lg uppercase tracking-wider hover:bg-text-primary hover:text-accent transition-all border-4 border-primary hover:scale-105"
+          className="inline-block bg-accent text-white px-10 py-4 font-display text-lg rounded-xl hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
         >
-          CONTACT US
+          Contact Us
         </a>
       </div>
     </div>

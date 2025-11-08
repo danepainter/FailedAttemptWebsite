@@ -4,13 +4,13 @@ import { streamingPlatforms } from '../data/bandInfo';
 const Music = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="font-display text-5xl md:text-7xl mb-8 text-center border-b-4 border-accent pb-4">
-        MUSIC
+      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold">
+        Music
       </h1>
 
       {/* Streaming Platforms */}
       <div className="mb-16">
-        <h2 className="font-display text-3xl md:text-4xl mb-8">STREAM NOW</h2>
+        <h2 className="font-display text-2xl md:text-3xl mb-8 font-semibold">Stream Now</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8">
           {streamingPlatforms.map((platform) => (
             <a
@@ -18,12 +18,12 @@ const Music = () => {
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-surface border-4 border-text-secondary p-8 hover:border-accent hover:bg-primary transition-all group cursor-pointer"
+              className="bg-surface rounded-2xl shadow-md p-8 hover:shadow-xl transition-all group cursor-pointer border border-gray-200 hover:border-accent"
             >
-              <h3 className="font-display text-2xl md:text-3xl mb-3 group-hover:text-accent transition-colors">
+              <h3 className="font-display text-2xl md:text-3xl mb-3 group-hover:text-accent transition-colors font-semibold">
                 {platform.name}
               </h3>
-              <p className="text-text-secondary text-base uppercase tracking-wider group-hover:text-text-primary transition-colors">
+              <p className="text-text-secondary text-base group-hover:text-accent transition-colors">
                 Listen on {platform.name} →
               </p>
             </a>
@@ -32,10 +32,10 @@ const Music = () => {
 
         {/* Spotify Embed */}
         <div className="mb-12">
-          <h3 className="font-display text-2xl md:text-3xl mb-6">SPOTIFY PLAYER</h3>
-          <div className="bg-surface p-6 border-4 border-accent">
+          <h3 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Spotify Player</h3>
+          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-200">
             <iframe
-              style={{ borderRadius: '0' }}
+              style={{ borderRadius: '12px' }}
               src="https://open.spotify.com/embed/artist/480sb9ILAMg0RVSRpEysVR?utm_source=generator&theme=0"
               width="100%"
               height="380"
@@ -49,10 +49,10 @@ const Music = () => {
 
         {/* Bandcamp Embed */}
         <div className="mb-12">
-          <h3 className="font-display text-2xl md:text-3xl mb-6">BANDCAMP</h3>
-          <div className="bg-surface p-6 border-4 border-accent">
+          <h3 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Bandcamp</h3>
+          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-200">
             <iframe
-              style={{ border: 0, width: '100%', height: '380px' }}
+              style={{ border: 0, width: '100%', height: '380px', borderRadius: '12px' }}
               src="https://bandcamp.com/EmbeddedPlayer/album=3850885425/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
               seamless
               className="w-full"
@@ -68,14 +68,14 @@ const Music = () => {
 
       {/* Audio Samples Section */}
       <div className="mb-12">
-        <h2 className="font-display text-3xl mb-6">AUDIO SAMPLES</h2>
+        <h2 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Audio Samples</h2>
         <p className="text-text-secondary mb-6">
           15-second preview samples. Full tracks available on streaming platforms.
         </p>
         
         <div className="grid grid-cols-1 gap-4">
           {/* Placeholder for audio samples - user can add their own audio files */}
-          <div className="bg-surface border-4 border-text-secondary p-6 text-center">
+          <div className="bg-surface rounded-2xl shadow-md p-8 text-center border border-gray-200">
             <p className="text-text-secondary">
               Audio samples coming soon. Add your audio files to the public folder and update the AudioPlayer components here.
             </p>
@@ -97,9 +97,9 @@ const Music = () => {
           href="https://www.youtube.com/@FailedAttemptHxC"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-accent text-primary px-8 py-4 font-display text-xl uppercase tracking-wider hover:bg-text-primary hover:text-accent transition-colors border-4 border-primary"
+          className="inline-block bg-accent text-white px-10 py-4 font-display text-lg rounded-xl hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
         >
-          WATCH ON YOUTUBE
+          Watch on YouTube
         </a>
       </div>
     </div>

@@ -8,16 +8,16 @@ const Photos = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="font-display text-5xl md:text-7xl mb-8 text-center border-b-4 border-accent pb-4">
-        PHOTOS
+      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold">
+        Photos
       </h1>
 
       {photos.length === 0 ? (
         // Empty State
         <div className="text-center py-20">
-          <div className="bg-surface border-4 border-accent p-12 md:p-16 max-w-3xl mx-auto">
-            <h2 className="font-display text-4xl md:text-5xl mb-6 text-accent">
-              GALLERY COMING SOON
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-lg p-12 md:p-16 max-w-3xl mx-auto border border-blue-200">
+            <h2 className="font-display text-3xl md:text-4xl mb-6 text-accent font-semibold">
+              Gallery Coming Soon
             </h2>
             <p className="text-text-primary text-lg md:text-xl mb-6 max-w-2xl mx-auto">
               We're working on adding photos from shows, studio sessions, and more.
@@ -29,9 +29,9 @@ const Photos = () => {
               href="https://www.instagram.com/failedattempt.hc/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-accent text-primary px-10 py-5 font-display text-xl uppercase tracking-wider hover:bg-text-primary hover:text-accent transition-all border-4 border-primary hover:scale-105"
+              className="inline-block bg-accent text-white px-10 py-5 font-display text-xl rounded-xl hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
-              VIEW ON INSTAGRAM
+              View on Instagram
             </a>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Photos = () => {
           {photos.map((photo, index) => (
             <div
               key={index}
-              className="bg-surface border-4 border-text-secondary overflow-hidden hover:border-accent transition-all aspect-square"
+              className="bg-surface rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all aspect-square border border-gray-200"
             >
               <img
                 src={photo}
@@ -54,8 +54,8 @@ const Photos = () => {
       )}
 
       {/* Photo Credit / Info Section */}
-      <div className="mt-12 bg-surface border-4 border-accent p-8">
-        <h2 className="font-display text-2xl mb-4">PHOTO SUBMISSIONS</h2>
+      <div className="mt-12 bg-surface rounded-2xl shadow-md p-8 border border-gray-200">
+        <h2 className="font-display text-2xl mb-4 font-semibold">Photo Submissions</h2>
         <p className="text-text-secondary mb-4">
           Got photos from one of our shows? Tag us on Instagram or send them our way.
         </p>
