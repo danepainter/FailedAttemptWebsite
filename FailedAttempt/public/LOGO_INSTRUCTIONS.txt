@@ -1,0 +1,19 @@
+LOGO PLACEMENT INSTRUCTIONS
+============================
+
+To add your band logo:
+
+1. Export your logo as "logo.png"
+2. Place it in this folder (public/)
+3. The final path should be: public/logo.png
+
+RECOMMENDATIONS:
+- Format: PNG with transparent background
+- Size: 800x800px or larger (will auto-scale)
+- Style: High contrast works best with the dark theme
+
+The home page is already configured to display your logo automatically!
+
+If you don't have a logo yet, the band name "FAILED ATTEMPT" will display 
+prominently on the home page as a fallback.
+
