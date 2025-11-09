@@ -15,7 +15,7 @@ const Photos = () => {
       {photos.length === 0 ? (
         // Empty State
         <div className="text-center py-20">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-lg p-12 md:p-16 max-w-3xl mx-auto border border-blue-200">
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-lg p-12 md:p-16 max-w-3xl mx-auto border border-gray-700">
             <h2 className="font-display text-3xl md:text-4xl mb-6 text-accent font-semibold">
               Gallery Coming Soon
             </h2>
@@ -41,7 +41,7 @@ const Photos = () => {
           {photos.map((photo, index) => (
             <div
               key={index}
-              className="bg-surface rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all aspect-square border border-gray-200"
+              className="bg-surface rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all aspect-square border border-gray-700"
             >
               <img
                 src={photo}
@@ -54,7 +54,7 @@ const Photos = () => {
       )}
 
       {/* Photo Credit / Info Section */}
-      <div className="mt-12 bg-surface rounded-2xl shadow-md p-8 border border-gray-200">
+      <div className="mt-12 bg-surface rounded-2xl shadow-md p-8 border border-gray-700">
         <h2 className="font-display text-2xl mb-4 font-semibold">Photo Submissions</h2>
         <p className="text-text-secondary mb-4">
           Got photos from one of our shows? Tag us on Instagram or send them our way.

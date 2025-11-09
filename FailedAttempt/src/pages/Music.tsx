@@ -18,7 +18,7 @@ const Music = () => {
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-surface rounded-2xl shadow-md p-8 hover:shadow-xl transition-all group cursor-pointer border border-gray-200 hover:border-accent"
+              className="bg-surface rounded-2xl shadow-md p-8 hover:shadow-xl transition-all group cursor-pointer border border-gray-700 hover:border-accent"
             >
               <h3 className="font-display text-2xl md:text-3xl mb-3 group-hover:text-accent transition-colors font-semibold">
                 {platform.name}
@@ -33,10 +33,10 @@ const Music = () => {
         {/* Spotify Embed */}
         <div className="mb-12">
           <h3 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Spotify Player</h3>
-          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-200">
+          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-700">
             <iframe
               style={{ borderRadius: '12px' }}
-              src="https://open.spotify.com/embed/artist/480sb9ILAMg0RVSRpEysVR?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/artist/480sb9ILAMg0RVSRpEysVR?utm_source=generator&theme=1"
               width="100%"
               height="380"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -50,10 +50,10 @@ const Music = () => {
         {/* Bandcamp Embed */}
         <div className="mb-12">
           <h3 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Bandcamp</h3>
-          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-200">
+          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-700">
             <iframe
               style={{ border: 0, width: '100%', height: '380px', borderRadius: '12px' }}
-              src="https://bandcamp.com/EmbeddedPlayer/album=3850885425/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+              src="https://bandcamp.com/EmbeddedPlayer/album=3850885425/size=large/bgcol=1e293b/linkcol=60a5fa/tracklist=false/transparent=true/"
               seamless
               className="w-full"
               title="Bandcamp Player"
@@ -75,7 +75,7 @@ const Music = () => {
         
         <div className="grid grid-cols-1 gap-4">
           {/* Placeholder for audio samples - user can add their own audio files */}
-          <div className="bg-surface rounded-2xl shadow-md p-8 text-center border border-gray-200">
+          <div className="bg-surface rounded-2xl shadow-md p-8 text-center border border-gray-700">
             <p className="text-text-secondary">
               Audio samples coming soon. Add your audio files to the public folder and update the AudioPlayer components here.
             </p>

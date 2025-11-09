@@ -9,7 +9,7 @@ const Contact = () => {
 
       {/* Email Contact */}
       <div className="mb-16">
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-lg p-10 md:p-16 text-center border border-blue-200">
+        <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-lg p-10 md:p-16 text-center border border-gray-700">
           <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold">Get in Touch</h2>
           <p className="text-text-primary text-lg md:text-xl mb-8 mx-auto max-w-2xl">
             For booking inquiries, press, or general questions:
@@ -36,7 +36,7 @@ const Contact = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-surface rounded-2xl shadow-md p-10 md:p-12 hover:shadow-xl transition-all group text-center cursor-pointer border border-gray-200 hover:border-accent"
+              className="bg-surface rounded-2xl shadow-md p-10 md:p-12 hover:shadow-xl transition-all group text-center cursor-pointer border border-gray-700 hover:border-accent"
             >
               <h3 className="font-display text-3xl md:text-4xl mb-4 group-hover:text-accent transition-colors font-semibold">
                 {link.platform}
@@ -50,7 +50,7 @@ const Contact = () => {
       </div>
 
       {/* Booking Info */}
-      <div className="bg-surface rounded-2xl shadow-md p-8 md:p-12 border border-gray-200">
+      <div className="bg-surface rounded-2xl shadow-md p-8 md:p-12 border border-gray-700">
         <h2 className="font-display text-2xl mb-6 font-semibold">Booking</h2>
         <div className="space-y-4 text-text-secondary">
           <p>

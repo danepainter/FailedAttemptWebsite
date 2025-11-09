@@ -22,10 +22,10 @@ const Navigation = () => {
       activeHref={location.pathname}
       className=""
       ease="power3.easeOut"
-      baseColor="#ffffff"
-      pillColor="#1e293b"
-      hoveredPillTextColor="#ffffff"
-      pillTextColor="#ffffff"
+      baseColor="#1e293b"
+      pillColor="#f8fafc"
+      hoveredPillTextColor="#0f172a"
+      pillTextColor="#0f172a"
       initialLoadAnimation={true}
     />
   );

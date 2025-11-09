@@ -20,7 +20,7 @@ const Shows = () => {
       {shows.length === 0 ? (
         // Empty State
         <div className="text-center py-20">
-          <div className="bg-surface rounded-3xl shadow-lg p-12 md:p-16 max-w-3xl mx-auto border border-gray-200">
+          <div className="bg-surface rounded-3xl shadow-lg p-12 md:p-16 max-w-3xl mx-auto border border-gray-700">
             <h2 className="font-display text-3xl md:text-4xl mb-6 text-accent font-semibold">
               No Shows Scheduled
             </h2>
@@ -74,7 +74,7 @@ const Shows = () => {
       )}
 
       {/* Info Section */}
-      <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-md p-10 md:p-12 border border-blue-200">
+      <div className="mt-16 bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-md p-10 md:p-12 border border-gray-700">
         <h2 className="font-display text-3xl md:text-4xl mb-6 font-semibold">Booking</h2>
         <p className="text-text-primary text-lg md:text-xl mb-6 max-w-3xl">
           Interested in booking Failed Attempt for your venue or festival?

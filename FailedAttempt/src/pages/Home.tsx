@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="min-h-[80vh]">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 py-16 md:py-24">
+      <div className="bg-gradient-to-br from-slate-900 to-slate-800 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           {/* Logo - references /logo.png that user will add */}
           <div className="mb-8 flex justify-center">
@@ -37,7 +37,7 @@ const Home = () => {
             </Link>
             <Link
               to="/shows"
-              className="bg-white text-primary px-10 py-4 font-display text-lg rounded-xl hover:bg-accent hover:text-white transition-all shadow-lg hover:shadow-xl border border-gray-200 hover:scale-105"
+              className="bg-surface text-text-primary px-10 py-4 font-display text-lg rounded-xl hover:bg-accent hover:text-white transition-all shadow-lg hover:shadow-xl border border-gray-700 hover:scale-105"
             >
               Shows
             </Link>
@@ -50,7 +50,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <Link
             to="/music"
-            className="bg-surface rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group cursor-pointer border border-gray-200 hover:border-accent"
+            className="bg-surface rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group cursor-pointer border border-gray-700 hover:border-accent"
           >
             <h2 className="font-display text-3xl md:text-4xl mb-4 group-hover:text-accent transition-colors font-semibold">
               Music
@@ -62,7 +62,7 @@ const Home = () => {
 
           <Link
             to="/shows"
-            className="bg-surface rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group cursor-pointer border border-gray-200 hover:border-accent"
+            className="bg-surface rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group cursor-pointer border border-gray-700 hover:border-accent"
           >
             <h2 className="font-display text-3xl md:text-4xl mb-4 group-hover:text-accent transition-colors font-semibold">
               Shows
@@ -74,7 +74,7 @@ const Home = () => {
 
           <Link
             to="/media"
-            className="bg-surface rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group cursor-pointer border border-gray-200 hover:border-accent"
+            className="bg-surface rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group cursor-pointer border border-gray-700 hover:border-accent"
           >
             <h2 className="font-display text-3xl md:text-4xl mb-4 group-hover:text-accent transition-colors font-semibold">
               Media

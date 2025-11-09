@@ -8,7 +8,7 @@ const Media = () => {
       {/* YouTube Section */}
       <div className="mb-16">
         <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold">YouTube</h2>
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-lg p-10 md:p-12 border border-blue-200">
+        <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-lg p-10 md:p-12 border border-gray-700">
           <p className="text-text-primary text-lg md:text-xl mb-8 max-w-3xl">
             Check out our latest videos, live performances, and music videos on YouTube.
           </p>
@@ -26,7 +26,7 @@ const Media = () => {
       {/* Instagram Section */}
       <div className="mb-16">
         <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold">Instagram</h2>
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl shadow-lg p-10 md:p-12 border border-blue-200">
+        <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-lg p-10 md:p-12 border border-gray-700">
           <p className="text-text-primary text-lg md:text-xl mb-8 max-w-3xl">
             Follow us on Instagram for behind-the-scenes content, show updates, and more.
           </p>
@@ -45,7 +45,7 @@ const Media = () => {
       <div className="mb-12">
         <h2 className="font-display text-3xl mb-6 font-semibold">Featured Videos</h2>
         <div className="grid grid-cols-1 gap-6">
-          <div className="bg-surface rounded-2xl shadow-md p-8 text-center border border-gray-200">
+          <div className="bg-surface rounded-2xl shadow-md p-8 text-center border border-gray-700">
             <p className="text-text-secondary">
               Featured video embeds coming soon. Add YouTube embed codes here when available.
             </p>
@@ -74,7 +74,7 @@ const Media = () => {
       </div>
 
       {/* Press / Media Kit */}
-      <div className="bg-surface rounded-2xl shadow-md p-8 border border-gray-200">
+      <div className="bg-surface rounded-2xl shadow-md p-8 border border-gray-700">
         <h2 className="font-display text-2xl mb-4 font-semibold">Press / Media</h2>
         <p className="text-text-secondary mb-4">
           Looking for press photos, logos, or other media materials? Contact us for our media kit.

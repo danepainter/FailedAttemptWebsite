@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  /* Color theme - Modern and friendly */
-  --color-primary: #1e293b;
-  --color-secondary: #334155;
-  --color-accent: #3b82f6;
-  --color-background: #f8fafc;
-  --color-surface: #ffffff;
-  --color-text-primary: #1e293b;
-  --color-text-secondary: #64748b;
+  /* Color theme - Dark mode */
+  --color-primary: #f8fafc;
+  --color-secondary: #cbd5e1;
+  --color-accent: #60a5fa;
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
   
   /* Spacing */
   --spacing-xs: 0.5rem;
