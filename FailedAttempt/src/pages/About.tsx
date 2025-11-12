@@ -10,15 +10,12 @@ const About = () => {
       {/* Band Bio */}
       <div className="mb-16">
         <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-lg p-10 md:p-16 border border-[#161A1D]">
-          <h2 className="font-display text-3xl md:text-4xl mb-8 text-accent font-semibold">{bandName}</h2>
-          <p className="text-lg md:text-xl leading-relaxed text-text-primary mb-8 max-w-none">
-            {bandBio}
-          </p>
-          <p className="text-text-secondary text-base md:text-lg leading-relaxed max-w-none">
-            Formed from a shared vision of creating uncompromising, aggressive music, 
-            Failed Attempt pushes the boundaries of modern hardcore. Every riff, every 
-            breakdown, and every lyric is crafted to deliver maximum impact.
-          </p>
+          <h2 className="font-display text-3xl md:text-4xl mb-8 text-accent font-semibold text-center">{bandName}</h2>
+          <div className="flex justify-center mb-8">
+            <p className="text-lg md:text-xl leading-relaxed text-text-primary text-center max-w-4xl">
+              {bandBio}
+            </p>
+          </div>
         </div>
       </div>
 
@@ -38,41 +35,6 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Genre & Style */}
-      <div className="mb-16">
-        <h2 className="font-display text-3xl mb-6 font-semibold text-accent">Style</h2>
-        <div className="bg-surface rounded-2xl shadow-md p-8 border border-[#161A1D]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-display text-xl mb-3 text-accent font-semibold">Genre</h3>
-              <p className="text-text-primary">Hardcore</p>
-            </div>
-            <div>
-              <h3 className="font-display text-xl mb-3 text-accent font-semibold">Vibe</h3>
-              <p className="text-text-primary">Energetic & Intense</p>
-            </div>
-            <div>
-              <h3 className="font-display text-xl mb-3 text-accent font-semibold">Era</h3>
-              <p className="text-text-primary">Modern Hardcore</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Listen Section */}
-      <div className="text-center bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-lg p-12 border border-[#161A1D]">
-        <h2 className="font-display text-4xl mb-6 font-semibold text-accent">Experience Our Music</h2>
-        <p className="text-text-secondary mb-8 text-lg">
-          Listen to our music on all major streaming platforms.
-        </p>
-        <a
-          href="/music"
-          className="inline-block bg-accent text-white px-10 py-4 font-display text-xl rounded-xl hover:bg-[#BA181B] transition-all shadow-lg hover:shadow-xl hover:scale-105"
-        >
-          Listen Now
-        </a>
       </div>
     </div>
   );

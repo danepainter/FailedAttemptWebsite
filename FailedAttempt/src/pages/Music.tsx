@@ -11,20 +11,20 @@ const Music = () => {
       {/* Streaming Platforms */}
       <div className="mb-16">
         <h2 className="font-display text-2xl md:text-3xl mb-8 font-semibold text-accent">Stream Now</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-8">
           {streamingPlatforms.map((platform) => (
             <a
               key={platform.name}
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-surface rounded-2xl shadow-md p-8 hover:shadow-xl transition-all group cursor-pointer border border-[#161A1D] hover:border-accent"
+              className="bg-surface rounded-xl shadow-md p-4 md:p-6 hover:shadow-xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] text-center"
             >
-              <h3 className="font-display text-2xl md:text-3xl mb-3 group-hover:text-accent transition-colors font-semibold">
+              <h3 className="font-display text-lg md:text-xl mb-2 group-hover:text-accent transition-colors font-semibold">
                 {platform.name}
               </h3>
-              <p className="text-text-secondary text-base group-hover:text-accent transition-colors">
-                Listen on {platform.name} →
+              <p className="text-text-secondary text-xs md:text-sm group-hover:text-accent transition-colors">
+                Listen →
               </p>
             </a>
           ))}

@@ -2,14 +2,18 @@ import type { BandMember, SocialLink, StreamingPlatform } from '../types';
 
 export const bandName = "Failed Attempt";
 
-export const bandBio = `Failed Attempt is a hardcore band that embodies the raw energy and uncompromising spirit of the genre. Born from the underground scene, the band delivers relentless, aggressive music that pulls no punches. With crushing breakdowns, fierce vocals, and an unforgiving sound, Failed Attempt represents the darker side of hardcore - a sonic assault that reflects the chaos and intensity of the world around us.`;
+export const bandBio = `Failed Attempt is a hardcore band founded in 2024 in South Florida.
+   We are a 5 piece band that is dedicated to making music that is true to the genre and to the fans.  
+   Formed from a shared vision of creating uncompromising, aggressive music, 
+            Failed Attempt pushes the boundaries of modern hardcore. Every riff, every 
+            breakdown, and every lyric is crafted to deliver maximum impact.`;
 
 export const bandMembers: BandMember[] = [
-  { name: "TBA", role: "Vocals" },
-  { name: "TBA", role: "Guitar" },
-  { name: "TBA", role: "Guitar" },
-  { name: "TBA", role: "Bass" },
-  { name: "TBA", role: "Drums" },
+  { name: "Juan", role: "Vocals" },
+  { name: "Max", role: "Guitar" },
+  { name: "Dane", role: "Guitar" },
+  { name: "Zion", role: "Bass" },
+  { name: "Jason", role: "Drums" },
 ];
 
 export const socialLinks: SocialLink[] = [

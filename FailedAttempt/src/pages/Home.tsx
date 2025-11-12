@@ -24,9 +24,11 @@ const Home = () => {
             Failed Attempt
           </h1>
 
-          <p className="text-xl md:text-2xl text-text-secondary mb-12 font-medium text-center mx-auto">
-            Hardcore Music
-          </p>
+          <div className="w-full flex justify-center mb-12">
+            <p className="text-xl md:text-2xl text-text-secondary font-medium">
+              Hardcore Music
+            </p>
+          </div>
         </div>
       </div>
 
