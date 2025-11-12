@@ -7,15 +7,15 @@ const Photos = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold">
+    <div className="w-full mx-auto px-4 py-12">
+      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold text-accent">
         Photos
       </h1>
 
       {photos.length === 0 ? (
         // Empty State
         <div className="text-center py-20">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-lg p-12 md:p-16 max-w-3xl mx-auto border border-gray-700">
+          <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-lg p-12 md:p-16 w-full mx-auto border-2 border-accent">
             <h2 className="font-display text-3xl md:text-4xl mb-6 text-accent font-semibold">
               Gallery Coming Soon
             </h2>
@@ -29,7 +29,7 @@ const Photos = () => {
               href="https://www.instagram.com/failedattempt.hc/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-accent text-white px-10 py-5 font-display text-xl rounded-xl hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-block bg-accent text-white px-10 py-5 font-display text-xl rounded-xl hover:bg-[#BA181B] transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               View on Instagram
             </a>
@@ -41,7 +41,7 @@ const Photos = () => {
           {photos.map((photo, index) => (
             <div
               key={index}
-              className="bg-surface rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all aspect-square border border-gray-700"
+              className="bg-surface rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all aspect-square border border-[#161A1D]"
             >
               <img
                 src={photo}
@@ -54,8 +54,8 @@ const Photos = () => {
       )}
 
       {/* Photo Credit / Info Section */}
-      <div className="mt-12 bg-surface rounded-2xl shadow-md p-8 border border-gray-700">
-        <h2 className="font-display text-2xl mb-4 font-semibold">Photo Submissions</h2>
+      <div className="mt-12 bg-surface rounded-2xl shadow-md p-8 border border-[#161A1D]">
+        <h2 className="font-display text-2xl mb-4 font-semibold text-accent">Photo Submissions</h2>
         <p className="text-text-secondary mb-4">
           Got photos from one of our shows? Tag us on Instagram or send them our way.
         </p>

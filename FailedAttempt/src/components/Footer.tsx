@@ -4,8 +4,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-surface shadow-lg mt-auto border-t border-gray-700">
-      <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
+    <footer className="bg-background shadow-lg mt-auto border-t border-[#161A1D]">
+      <div className="w-full mx-auto px-4 py-8 md:py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="font-display text-xl mb-2 font-semibold">Failed Attempt</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2 rounded-lg bg-accent text-white hover:bg-blue-600 transition-all duration-300 text-sm font-medium shadow-sm hover:shadow-md"
+                className="px-5 py-2 rounded-lg bg-accent text-white hover:bg-[#BA181B] transition-all duration-300 text-sm font-medium shadow-sm hover:shadow-md"
               >
                 {link.platform}
               </a>

@@ -3,14 +3,14 @@ import { streamingPlatforms } from '../data/bandInfo';
 
 const Music = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold">
+    <div className="w-full mx-auto px-4 py-12">
+      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold text-accent">
         Music
       </h1>
 
       {/* Streaming Platforms */}
       <div className="mb-16">
-        <h2 className="font-display text-2xl md:text-3xl mb-8 font-semibold">Stream Now</h2>
+        <h2 className="font-display text-2xl md:text-3xl mb-8 font-semibold text-accent">Stream Now</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8">
           {streamingPlatforms.map((platform) => (
             <a
@@ -18,7 +18,7 @@ const Music = () => {
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-surface rounded-2xl shadow-md p-8 hover:shadow-xl transition-all group cursor-pointer border border-gray-700 hover:border-accent"
+              className="bg-surface rounded-2xl shadow-md p-8 hover:shadow-xl transition-all group cursor-pointer border border-[#161A1D] hover:border-accent"
             >
               <h3 className="font-display text-2xl md:text-3xl mb-3 group-hover:text-accent transition-colors font-semibold">
                 {platform.name}
@@ -32,8 +32,8 @@ const Music = () => {
 
         {/* Spotify Embed */}
         <div className="mb-12">
-          <h3 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Spotify Player</h3>
-          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-700">
+          <h3 className="font-display text-2xl md:text-3xl mb-6 font-semibold text-accent">Spotify Player</h3>
+          <div className="bg-surface p-6 rounded-2xl shadow-md border-2 border-accent">
             <iframe
               style={{ borderRadius: '12px' }}
               src="https://open.spotify.com/embed/artist/480sb9ILAMg0RVSRpEysVR?utm_source=generator&theme=1"
@@ -46,61 +46,6 @@ const Music = () => {
             ></iframe>
           </div>
         </div>
-
-        {/* Bandcamp Embed */}
-        <div className="mb-12">
-          <h3 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Bandcamp</h3>
-          <div className="bg-surface p-6 rounded-2xl shadow-md border border-gray-700">
-            <iframe
-              style={{ border: 0, width: '100%', height: '380px', borderRadius: '12px' }}
-              src="https://bandcamp.com/EmbeddedPlayer/album=3850885425/size=large/bgcol=1e293b/linkcol=60a5fa/tracklist=false/transparent=true/"
-              seamless
-              className="w-full"
-              title="Bandcamp Player"
-            >
-              <a href="https://failedattempt.bandcamp.com/album/failed-attempt">
-                Failed Attempt by Failed Attempt
-              </a>
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-      {/* Audio Samples Section */}
-      <div className="mb-12">
-        <h2 className="font-display text-2xl md:text-3xl mb-6 font-semibold">Audio Samples</h2>
-        <p className="text-text-secondary mb-6">
-          15-second preview samples. Full tracks available on streaming platforms.
-        </p>
-        
-        <div className="grid grid-cols-1 gap-4">
-          {/* Placeholder for audio samples - user can add their own audio files */}
-          <div className="bg-surface rounded-2xl shadow-md p-8 text-center border border-gray-700">
-            <p className="text-text-secondary">
-              Audio samples coming soon. Add your audio files to the public folder and update the AudioPlayer components here.
-            </p>
-          </div>
-          
-          {/* Example AudioPlayer - uncomment and update when audio files are added
-          <AudioPlayer
-            title="Track Name"
-            audioUrl="/audio/sample.mp3"
-            maxDuration={15}
-          />
-          */}
-        </div>
-      </div>
-
-      {/* YouTube Link */}
-      <div className="text-center mt-12">
-        <a
-          href="https://www.youtube.com/@FailedAttemptHxC"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-accent text-white px-10 py-4 font-display text-lg rounded-xl hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-        >
-          Watch on YouTube
-        </a>
       </div>
     </div>
   );

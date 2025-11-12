@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  /* Color theme - Dark mode */
-  --color-primary: #f8fafc;
-  --color-secondary: #cbd5e1;
-  --color-accent: #60a5fa;
-  --color-background: #0f172a;
-  --color-surface: #1e293b;
-  --color-text-primary: #f8fafc;
-  --color-text-secondary: #94a3b8;
+  /* Color theme - Hardcore Palette */
+  --color-primary: #FFFFFF;
+  --color-secondary: #B1A7A6;
+  --color-accent: #E5383B;
+  --color-background: #0B090A;
+  --color-surface: #161A1D;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D3D3D3;
   
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -27,7 +27,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-surface);
   color: var(--color-text-primary);
   min-height: 100vh;
   line-height: 1.7;

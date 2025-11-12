@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="min-h-[80vh]">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 py-16 md:py-24">
+      <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] py-16 md:py-24">
         <div className="w-full px-4 text-center">
           {/* Logo - references /logo.png that user will add */}
           <div className="mb-8 flex justify-center">
@@ -20,7 +20,7 @@ const Home = () => {
           </div>
 
           {/* Band Name as fallback or additional text */}
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl mb-4 text-primary font-bold text-center">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl mb-4 text-accent font-bold text-center">
             Failed Attempt
           </h1>
 
@@ -36,7 +36,7 @@ const Home = () => {
           {/* Music Card */}
           <Link
             to="/music"
-            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-gray-700 hover:border-accent hover:scale-105"
+            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] hover:scale-105"
           >
             <div className="text-center">
               <div className="text-5xl mb-4">🎵</div>
@@ -52,7 +52,7 @@ const Home = () => {
           {/* Shows Card */}
           <Link
             to="/shows"
-            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-gray-700 hover:border-accent hover:scale-105"
+            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] hover:scale-105"
           >
             <div className="text-center">
               <div className="text-5xl mb-4">🎤</div>
@@ -68,7 +68,7 @@ const Home = () => {
           {/* Media Card */}
           <Link
             to="/media"
-            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-gray-700 hover:border-accent hover:scale-105"
+            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] hover:scale-105"
           >
             <div className="text-center">
               <div className="text-5xl mb-4">📺</div>
@@ -84,7 +84,7 @@ const Home = () => {
           {/* Photos Card */}
           <Link
             to="/photos"
-            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-gray-700 hover:border-accent hover:scale-105"
+            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] hover:scale-105"
           >
             <div className="text-center">
               <div className="text-5xl mb-4">📸</div>
@@ -100,7 +100,7 @@ const Home = () => {
           {/* About Card */}
           <Link
             to="/about"
-            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-gray-700 hover:border-accent hover:scale-105"
+            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] hover:scale-105"
           >
             <div className="text-center">
               <div className="text-5xl mb-4">ℹ️</div>
@@ -116,7 +116,7 @@ const Home = () => {
           {/* Contact Card */}
           <Link
             to="/contact"
-            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-gray-700 hover:border-accent hover:scale-105"
+            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] hover:scale-105"
           >
             <div className="text-center">
               <div className="text-5xl mb-4">✉️</div>

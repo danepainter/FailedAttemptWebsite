@@ -2,21 +2,21 @@ import { socialLinks, contactEmail } from '../data/bandInfo';
 
 const Contact = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold">
+    <div className="w-full mx-auto px-4 py-12">
+      <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold text-accent">
         Contact
       </h1>
 
       {/* Email Contact */}
       <div className="mb-16">
-        <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-lg p-10 md:p-16 text-center border border-gray-700">
-          <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold">Get in Touch</h2>
+        <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-lg p-10 md:p-16 text-center border border-[#161A1D]">
+          <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold text-accent">Get in Touch</h2>
           <p className="text-text-primary text-lg md:text-xl mb-8 mx-auto max-w-2xl">
             For booking inquiries, press, or general questions:
           </p>
           <a
             href={`mailto:${contactEmail}`}
-            className="inline-block bg-accent text-white px-10 py-5 font-display text-xl rounded-xl hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl mb-6 hover:scale-105"
+            className="inline-block bg-accent text-white px-10 py-5 font-display text-xl rounded-xl hover:bg-[#BA181B] transition-all shadow-lg hover:shadow-xl mb-6 hover:scale-105"
           >
             Email Us
           </a>
@@ -28,7 +28,7 @@ const Contact = () => {
 
       {/* Social Media */}
       <div className="mb-16">
-        <h2 className="font-display text-3xl md:text-4xl mb-8 text-center font-semibold">Follow Us</h2>
+        <h2 className="font-display text-3xl md:text-4xl mb-8 text-center font-semibold text-accent">Follow Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {socialLinks.map((link) => (
             <a
@@ -36,7 +36,7 @@ const Contact = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-surface rounded-2xl shadow-md p-10 md:p-12 hover:shadow-xl transition-all group text-center cursor-pointer border border-gray-700 hover:border-accent"
+              className="bg-surface rounded-2xl shadow-md p-10 md:p-12 hover:shadow-xl transition-all group text-center cursor-pointer border border-[#161A1D] hover:border-accent"
             >
               <h3 className="font-display text-3xl md:text-4xl mb-4 group-hover:text-accent transition-colors font-semibold">
                 {link.platform}
@@ -50,8 +50,8 @@ const Contact = () => {
       </div>
 
       {/* Booking Info */}
-      <div className="bg-surface rounded-2xl shadow-md p-8 md:p-12 border border-gray-700">
-        <h2 className="font-display text-2xl mb-6 font-semibold">Booking</h2>
+      <div className="bg-surface rounded-2xl shadow-md p-8 md:p-12 border border-[#161A1D]">
+        <h2 className="font-display text-2xl mb-6 font-semibold text-accent">Booking</h2>
         <div className="space-y-4 text-text-secondary">
           <p>
             <strong className="text-text-primary">Booking Inquiries:</strong> Email us with your venue details, 
