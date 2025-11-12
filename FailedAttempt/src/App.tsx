@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import Music from './pages/Music';
 import Shows from './pages/Shows';
 import Media from './pages/Media';
-import Photos from './pages/Photos';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
@@ -17,7 +16,6 @@ function App() {
           <Route path="/music" element={<Music />} />
           <Route path="/shows" element={<Shows />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/photos" element={<Photos />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

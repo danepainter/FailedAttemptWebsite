@@ -32,6 +32,27 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Video Section */}
+      <div className="w-full px-4 py-16 flex justify-center">
+        <div className="max-w-4xl w-full mb-16">
+          <h2 className="font-display text-3xl md:text-4xl mb-8 text-center font-semibold text-accent">Latest Video</h2>
+          <div className="bg-surface rounded-2xl shadow-lg p-6 border-2 border-accent overflow-hidden">
+            <div className="aspect-video w-full">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/aWHRAM_Qld0"
+                title="Failed Attempt - Latest Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full rounded-lg"
+                style={{ border: 0 }}
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Navigation Cards Section - Unified Grid */}
       <div className="w-full px-4 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -79,22 +100,6 @@ const Home = () => {
               </h2>
               <p className="text-text-secondary text-sm md:text-base">
                 Videos & photos
-              </p>
-            </div>
-          </Link>
-
-          {/* Photos Card */}
-          <Link
-            to="/photos"
-            className="bg-surface rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all group cursor-pointer border-2 border-accent hover:border-[#BA181B] hover:scale-105"
-          >
-            <div className="text-center">
-              <div className="text-5xl mb-4">📸</div>
-              <h2 className="font-display text-2xl md:text-3xl mb-3 group-hover:text-accent transition-colors font-semibold">
-                Photos
-              </h2>
-              <p className="text-text-secondary text-sm md:text-base">
-                Band gallery
               </p>
             </div>
           </Link>

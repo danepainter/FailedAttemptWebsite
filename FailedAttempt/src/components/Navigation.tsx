@@ -9,7 +9,6 @@ const Navigation = () => {
     { label: 'Music', href: '/music' },
     { label: 'Shows', href: '/shows' },
     { label: 'Media', href: '/media' },
-    { label: 'Photos', href: '/photos' },
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ];
