@@ -1,4 +1,4 @@
-# Failed Attempt - Band Website
+gi# Failed Attempt - Band Website
 
 A hardcore band website built with React, TypeScript, Vite, TailwindCSS, and WebGL.
 
