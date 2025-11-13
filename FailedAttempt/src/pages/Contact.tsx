@@ -59,21 +59,27 @@ const Contact = () => {
       </div>
 
       {/* Booking Info */}
-      <div className="rounded-2xl shadow-md p-8 md:p-12 border border-[#161A1D]">
-        <h2 className="font-display text-2xl mb-6 font-semibold text-accent">Booking</h2>
+      <div className="rounded-2xl shadow-md p-8 md:p-12 border border-[#161A1D] text-center">
+        <h2 className="font-display text-2xl mb-6 font-semibold text-accent text-center">Booking</h2>
         <div className="space-y-4 text-text-secondary">
-          <p>
-            <strong className="text-text-primary">Booking Inquiries:</strong> Email us with your venue details, 
-            date, and any other information.
-          </p>
-          <p>
-            <strong className="text-text-primary">Press / Media:</strong> For interviews, press photos, 
-            or media kits, reach out via email.
-          </p>
-          <p>
-            <strong className="text-text-primary">General Questions:</strong> We'll get back to you 
-            as soon as possible.
-          </p>
+          <div className="flex justify-center">
+            <p className="text-center">
+              <strong className="text-text-primary">Booking Inquiries:</strong> Email us with your venue details, 
+              date, and any other information.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <p className="text-center">
+              <strong className="text-text-primary">Press / Media:</strong> For interviews, press photos, 
+              or media kits, reach out via email.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <p className="text-center">
+              <strong className="text-text-primary">General Questions:</strong> We'll get back to you 
+              as soon as possible.
+            </p>
+          </div>
         </div>
       </div>
 
