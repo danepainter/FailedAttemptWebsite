@@ -18,7 +18,7 @@ const About = () => {
 
       {/* Band Bio */}
       <div className="mb-16">
-        <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-lg p-10 md:p-16 border border-[#161A1D]">
+        <div className="rounded-3xl p-10 md:p-16">
           <h2 className="font-display text-3xl md:text-4xl mb-8 text-accent font-semibold text-center">{bandName}</h2>
           <div className="flex justify-center mb-8">
             <p className="text-lg md:text-xl leading-relaxed text-text-primary text-center max-w-4xl">
@@ -35,7 +35,7 @@ const About = () => {
           {bandMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-surface rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group border border-[#161A1D] hover:border-accent"
+              className="rounded-2xl shadow-md p-8 md:p-10 hover:shadow-xl transition-all group border border-[#161A1D] hover:border-accent"
             >
               <h3 className="font-display text-2xl md:text-3xl mb-3 group-hover:text-accent transition-colors font-semibold">{member.name}</h3>
               <p className="text-accent text-base md:text-lg font-medium">
