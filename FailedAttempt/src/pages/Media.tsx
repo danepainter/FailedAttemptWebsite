@@ -1,5 +1,15 @@
+import DarkVeil from '../components/Background';
+
 const Media = () => {
   return (
+    <div className="min-h-[80vh] relative">
+      {/* Page Background */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+        <DarkVeil hueShift={249} />
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10">
     <div className="w-full mx-auto px-4 py-12">
       <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold text-accent">
         Media
@@ -7,72 +17,50 @@ const Media = () => {
 
       {/* YouTube Section */}
       <div className="mb-16">
-        <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold text-accent">YouTube</h2>
-        <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-lg p-10 md:p-12 border border-[#161A1D]">
-          <p className="text-text-primary text-lg md:text-xl mb-8 max-w-3xl">
-            Check out our latest videos, live performances, and music videos on YouTube.
-          </p>
+        <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold text-accent text-center">YouTube</h2>
+        <div className="rounded-3xl p-10 md:p-12 text-center">
+          <div className="flex justify-center mb-8">
+            <p className="text-text-primary text-lg md:text-xl max-w-3xl text-center">
+              Check out our latest videos, live performances, and music videos on YouTube.
+            </p>
+          </div>
           <a
             href="https://www.youtube.com/@FailedAttemptHxC"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-accent text-white px-10 py-4 font-display text-lg rounded-xl hover:bg-[#BA181B] transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            className="inline-flex items-center gap-2 bg-accent text-white px-10 py-5 font-display text-lg font-semibold rounded-xl border-2 border-white/20 hover:border-white/40 hover:bg-[#BA181B] transition-all shadow-2xl hover:shadow-[0_0_20px_rgba(229,56,59,0.6)] hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-transparent"
+            aria-label="Visit our YouTube channel"
           >
-            Visit Channel
+            <span>Watch on YouTube</span>
+            <span>→</span>
           </a>
         </div>
       </div>
 
       {/* Instagram Section */}
       <div className="mb-16">
-        <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold text-accent">Instagram</h2>
-        <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-lg p-10 md:p-12 border border-[#161A1D]">
-          <p className="text-text-primary text-lg md:text-xl mb-8 max-w-3xl">
-            Follow us on Instagram for behind-the-scenes content, show updates, and more.
-          </p>
+        <h2 className="font-display text-3xl md:text-4xl mb-8 font-semibold text-accent text-center">Instagram</h2>
+        <div className="rounded-3xl p-10 md:p-12 text-center">
+          <div className="flex justify-center mb-8">
+            <p className="text-text-primary text-lg md:text-xl max-w-3xl text-center">
+              Follow us on Instagram for behind-the-scenes content, show updates, and more.
+            </p>
+          </div>
           <a
             href="https://www.instagram.com/failedattempt.hc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-accent text-white px-10 py-4 font-display text-lg rounded-xl hover:bg-[#BA181B] transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            className="inline-flex items-center gap-2 bg-accent text-white px-10 py-5 font-display text-lg font-semibold rounded-xl border-2 border-white/20 hover:border-white/40 hover:bg-[#BA181B] transition-all shadow-2xl hover:shadow-[0_0_20px_rgba(229,56,59,0.6)] hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-transparent"
+            aria-label="Follow us on Instagram"
           >
-            @failedattempt.hc
+            <span>Follow @failedattempt.hc</span>
+            <span>→</span>
           </a>
         </div>
       </div>
-
-      {/* Video Embeds Section - Placeholder */}
-      <div className="mb-12">
-        <h2 className="font-display text-3xl mb-6 font-semibold text-accent">Featured Videos</h2>
-        <div className="grid grid-cols-1 gap-6">
-          <div className="bg-surface rounded-2xl shadow-md p-8 text-center border border-[#161A1D]">
-            <p className="text-text-secondary">
-              Featured video embeds coming soon. Add YouTube embed codes here when available.
-            </p>
-            <p className="text-text-secondary text-sm mt-4">
-              Example: Replace the src below with your YouTube video embed URL
-            </p>
-          </div>
-          
-          {/* Example YouTube Embed - Update with actual video IDs
-          <div className="bg-surface border-4 border-text-secondary p-4">
-            <div className="aspect-video">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/VIDEO_ID"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              ></iframe>
-            </div>
-            <h3 className="font-display text-xl mt-4">VIDEO TITLE</h3>
-          </div>
-          */}
-        </div>
-      </div>
     </div>
+  </div>
+  </div>
   );
 };
 

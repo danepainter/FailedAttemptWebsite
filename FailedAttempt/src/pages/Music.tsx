@@ -1,8 +1,17 @@
 import { streamingPlatforms } from '../data/bandInfo';
+import DarkVeil from '../components/Background';
 // import AudioPlayer from '../components/AudioPlayer'; // Uncomment when adding audio samples
 
 const Music = () => {
   return (
+    <div className="min-h-[80vh] relative">
+      {/* Page Background */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+        <DarkVeil hueShift={249} />
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10">
     <div className="w-full mx-auto px-4 py-12">
       <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold text-accent">
         Music
@@ -46,6 +55,8 @@ const Music = () => {
             ></iframe>
           </div>
         </div>
+      </div>
+    </div>
       </div>
     </div>
   );

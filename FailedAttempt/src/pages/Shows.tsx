@@ -1,4 +1,5 @@
 import { shows } from '../data/shows';
+import DarkVeil from '../components/Background';
 
 const Shows = () => {
   const formatDate = (dateString: string) => {
@@ -12,6 +13,14 @@ const Shows = () => {
   };
 
   return (
+    <div className="min-h-[80vh] relative">
+      {/* Page Background */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+        <DarkVeil hueShift={249} />
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10">
     <div className="w-full mx-auto px-4 py-12">
       <h1 className="font-display text-4xl md:text-6xl mb-8 text-center pb-6 font-bold text-accent">
         Shows
@@ -74,17 +83,21 @@ const Shows = () => {
       )}
 
       {/* Info Section */}
-      <div className="mt-16 bg-gradient-to-br from-[#0B090A] to-[#161A1D] rounded-3xl shadow-md p-10 md:p-12 border border-[#161A1D]">
+      <div className="mt-16 rounded-3xl p-10 md:p-12 text-center">
         <h2 className="font-display text-3xl md:text-4xl mb-6 font-semibold text-accent">Booking</h2>
-        <p className="text-text-primary text-lg md:text-xl mb-6 max-w-3xl">
-          Interested in booking Failed Attempt for your venue or festival?
-        </p>
+        <div className="flex justify-center mb-6">
+          <p className="text-text-secondary text-lg md:text-xl max-w-3xl text-center">
+            Interested in booking Failed Attempt for your venue or festival?
+          </p>
+        </div>
         <a
           href="/contact"
           className="inline-block bg-accent text-white px-10 py-4 font-display text-lg rounded-xl hover:bg-[#BA181B] transition-all shadow-lg hover:shadow-xl hover:scale-105"
         >
           Contact Us
         </a>
+      </div>
+    </div>
       </div>
     </div>
   );

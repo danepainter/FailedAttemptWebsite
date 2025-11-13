@@ -1,17 +1,24 @@
-import { Link } from 'react-router-dom';
+import DarkVeil from '../components/Background';
 
 const Home = () => {
   return (
-    <div className="min-h-[80vh]">
+    <div className="min-h-[80vh] relative">
+      {/* Page Background */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+        <DarkVeil hueShift={249} />
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-[#0B090A] to-[#161A1D] py-16 md:py-24">
+      <div className="py-16 md:py-24">
         <div className="w-full px-4 text-center">
           {/* Logo - references /logo.png that user will add */}
           <div className="mb-8 flex justify-center">
             <img 
               src="/logo.png" 
               alt="Failed Attempt Logo" 
-              className="max-w-md w-3/4 h-auto rounded-2xl shadow-xl"
+              className="max-w-md w-3/4 h-auto rounded-2xl"
               onError={(e) => {
                 // Fallback if logo isn't uploaded yet
                 e.currentTarget.style.display = 'none';
@@ -51,6 +58,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
