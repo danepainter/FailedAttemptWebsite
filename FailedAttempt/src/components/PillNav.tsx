@@ -389,7 +389,7 @@ const PillNav: React.FC<PillNavProps> = ({
       </nav>
       <div
         ref={mobileMenuRef}
-        className="md:hidden absolute top-[3em] left-1/2 -translate-x-1/2 w-1/6 max-w-[800px] rounded-[27px] shadow-[0_8px_32px_rgba(0,0,0,0.12)] z-[998] origin-top"
+        className="md:hidden fixed top-[3em] left-1/2 -translate-x-1/2 w-1/6 max-w-[300px] rounded-[27px] shadow-[0_8px_32px_rgba(0,0,0,0.12)] z-[998] origin-top"
         style={{
           ...cssVars,
           background: 'var(--base, #f0f0f0)'
