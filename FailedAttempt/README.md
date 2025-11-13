@@ -1,16 +1,17 @@
 # Failed Attempt - Band Website
 
-A hardcore band website built with React, TypeScript, Vite, and TailwindCSS.
+A hardcore band website built with React, TypeScript, Vite, TailwindCSS, and WebGL.
 
 ## 🎸 Features
 
-- **7 Pages**: Home, Music, Shows, Media, Photos, About, Contact
+- **6 Pages**: Home, Music, Shows, Media, About, Contact
+- **Animated WebGL Background**: Dynamic DarkVeil background effect using OGL
 - **React Router**: Client-side navigation
 - **TailwindCSS**: Fully responsive, dark theme
 - **TypeScript**: Type-safe code
 - **CSS Custom Properties**: Easy theme customization
 - **Mobile Responsive**: Works on all devices
-- **No Animations**: Straightforward, bold design
+- **Modern UI**: Clean design with animated backgrounds
 
 ## 🚀 Getting Started
 
@@ -34,14 +35,30 @@ All colors are defined using CSS custom properties in `src/index.css`. Simply ch
 
 ```css
 :root {
-  --color-primary: #000000;      /* Main black */
-  --color-secondary: #1a1a1a;    /* Dark gray */
-  --color-accent: #ff0000;       /* Red accent */
-  --color-background: #0a0a0a;   /* Near black */
-  --color-surface: #1a1a1a;      /* Card backgrounds */
-  --color-text-primary: #ffffff; /* White text */
-  --color-text-secondary: #cccccc; /* Gray text */
+  --color-primary: #FFFFFF;      /* Main white */
+  --color-secondary: #B1A7A6;    /* Gray */
+  --color-accent: #E5383B;       /* Red accent */
+  --color-background: #0B090A;   /* Near black */
+  --color-surface: #161A1D;      /* Card backgrounds */
+  --color-text-primary: #FFFFFF; /* White text */
+  --color-text-secondary: #D3D3D3; /* Gray text */
 }
+```
+
+### Animated Background
+
+The site features an animated WebGL background (`DarkVeil`) that can be customized on each page:
+
+```typescript
+<DarkVeil 
+  hueShift={249}        // Color hue shift (0-360)
+  noiseIntensity={0}    // Noise effect intensity
+  scanlineIntensity={0} // Scanline effect intensity
+  speed={0.5}           // Animation speed
+  scanlineFrequency={0} // Scanline frequency
+  warpAmount={0}        // Warp distortion amount
+  resolutionScale={1}   // Resolution scaling
+/>
 ```
 
 ## 📁 Project Structure
@@ -50,15 +67,16 @@ All colors are defined using CSS custom properties in `src/index.css`. Simply ch
 src/
 ├── components/          # Reusable components
 │   ├── AudioPlayer.tsx  # Audio sample player
+│   ├── Background.tsx  # DarkVeil WebGL animated background
 │   ├── Footer.tsx       # Site footer
 │   ├── Layout.tsx       # Main layout wrapper
-│   └── Navigation.tsx   # Navigation menu
+│   ├── Navigation.tsx   # Navigation menu
+│   └── PillNav.tsx     # Pill-shaped navigation component
 ├── pages/              # Route pages
-│   ├── Home.tsx        # Landing page
-│   ├── Music.tsx       # Streaming platforms & audio
-│   ├── Shows.tsx       # Tour dates
-│   ├── Media.tsx       # Social media embeds
-│   ├── Photos.tsx      # Photo gallery
+│   ├── Home.tsx        # Landing page with video & quick actions
+│   ├── Music.tsx       # Streaming platforms & Spotify embed
+│   ├── Shows.tsx       # Tour dates & booking info
+│   ├── Media.tsx       # YouTube & Instagram links
 │   ├── About.tsx       # Band bio & members
 │   └── Contact.tsx     # Contact info & social links
 ├── data/               # Data files
@@ -119,25 +137,21 @@ export const shows: Show[] = [
 />
 ```
 
-### Photos
-1. Add photos to `public/photos/`
-2. In `src/pages/Photos.tsx`, add photo paths to the array:
-
-```typescript
-const photos: string[] = [
-  "/photos/photo1.jpg",
-  "/photos/photo2.jpg",
-];
-```
-
 ### Video Embeds
-In `src/pages/Media.tsx`, uncomment and update the YouTube embed with your video ID:
+The Home page includes a YouTube video embed. Update the video ID in `src/pages/Home.tsx`:
 
 ```typescript
 <iframe
   src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
   // ...
 />
+```
+
+### Animated Background
+The DarkVeil background is applied to all pages. To customize it, modify the `hueShift` prop in each page file:
+
+```typescript
+<DarkVeil hueShift={249} />  // Adjust hueShift (0-360) to match your color scheme
 ```
 
 ## 🔗 Links
@@ -160,12 +174,14 @@ export const socialLinks: SocialLink[] = [
 
 The following features are built and ready - just add your content:
 
-- ✅ Audio player for 15-second samples
+- ✅ Animated WebGL background (DarkVeil) on all pages
+- ✅ YouTube video embed on Home page
+- ✅ Spotify player embed on Music page
 - ✅ Show listings with ticket links
-- ✅ Photo gallery grid
-- ✅ Video embed sections
 - ✅ Streaming platform links
-- ✅ Social media integration
+- ✅ Social media integration (YouTube, Instagram)
+- ✅ Contact form with email link
+- ✅ Band member profiles
 
 ## 📱 Responsive Design
 
@@ -180,8 +196,10 @@ The site is fully responsive and tested on:
 - **React 19** - UI framework
 - **TypeScript** - Type safety
 - **Vite** - Build tool
-- **TailwindCSS** - Styling
-- **React Router** - Navigation
+- **TailwindCSS 4** - Styling
+- **React Router 7** - Navigation
+- **OGL** - WebGL library for animated backgrounds
+- **GSAP** - Animation library (available for future use)
 
 ## 📄 License
 
